@@ -132,10 +132,12 @@ function fightSlime(){
     goFight();
 }
 function fightBeast(){
-
+    fighting = 1;
+    goFight();
 }
 function fightDragon(){
-    console.log("Fighting dragon.");
+    fighting = 2;
+    goFight();
 }
 function sellWeapon(){
     if (inventory.length > 1){
