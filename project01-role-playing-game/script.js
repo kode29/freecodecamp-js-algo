@@ -160,11 +160,11 @@ function goFight(){
     update(locations[3]);
     monsterHealth = monsters[fighting].health;
     monsterStats.style.display = "block";
-    monsterName.innerText = monster[fighting].name;
-    monsterHealthText = monster[fighting].health;
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsters[fighting].health;
 }
 function attack(){
-
+    text.innerText = "The "+monsters[fighting].name+" attacks.";
 }
 function dodge(){
 
