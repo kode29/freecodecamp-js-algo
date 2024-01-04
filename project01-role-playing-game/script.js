@@ -128,7 +128,8 @@ function buyWeapon(){
     }
 }
 function fightSlime(){
-
+    fighting = 0;
+    goFight();
 }
 function fightBeast(){
 
@@ -148,5 +149,5 @@ function sellWeapon(){
     }
 }
 function goFight(){
-    
+
 }
