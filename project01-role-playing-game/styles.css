@@ -6,3 +6,11 @@ body{
     color: #fff;
     padding: 10px;
 }
+#game{
+    max-width:  500px;
+    max-height: 400px;
+    background-color: #fff;
+    color: #fff;
+    margin: 30px auto 0;
+    padding: 10px;
+}
