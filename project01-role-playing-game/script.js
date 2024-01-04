@@ -40,9 +40,9 @@ function update(location){
     text.innerText = location["text"];
     button1.innerText = location["button text"][0];
     button1.onclick = goStore;
-    button2.innerText = "Go to cave";
+    button2.innerText = location["button text"][1];
     button2.onclick = goCave;
-    button3.innerText = "Fight dragon";
+    button3.innerText = location["button text"][2];
     button3.onclick = fightDragon;
 }
 
