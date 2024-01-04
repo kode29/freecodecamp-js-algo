@@ -199,6 +199,9 @@ function defeatMonster(){
     xpText.innerText = xp;
     update(locations[4]);
 }
+function winGame(){
+    update(locations[6]);
+}
 function lose(){
     update(locations[5]);
 }
