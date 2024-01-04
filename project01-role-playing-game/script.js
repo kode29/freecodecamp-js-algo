@@ -254,8 +254,8 @@ function pick(guess){
         numbers.push(Math.floor(Math.random() * 11));
     }
     text.innerText = "You picked "+guess+". Here are the random numbers:\n";
-    for (let x=1; x<5; x++){
-        
+    for (let i=0; i<5; i++){
+
     }
 }
 function pickTwo(){
