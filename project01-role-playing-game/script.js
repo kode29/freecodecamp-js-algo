@@ -199,7 +199,7 @@ function attack(){
         fighting === 2 ? winGame() : defeatMonster(); 
     }
     if (Math.random() <= .1){
-        
+        text.innerText += " Your "+inventory.pop()+" breaks.";
     }
 }
 function getMonsterAttackValue(level){
