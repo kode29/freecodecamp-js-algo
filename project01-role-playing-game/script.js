@@ -6,7 +6,8 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick"];
 const locations = [{
-    name: "town square"
+    name: "town square",
+    "button text": []
 }];
 
 const button1 = document.querySelector("#button1");
