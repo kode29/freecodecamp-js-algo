@@ -99,7 +99,10 @@ function buyWeapon(){
         gold -= 30;
         goldText.innerText = gold;
         currentWeapon++;
-        text.innerText = "You now have a new weapon.";        
+        let newWeapon = weapons;
+        
+        text.innerText = "You now have a new weapon.";  
+
     }
 }
 function fightSlime(){
