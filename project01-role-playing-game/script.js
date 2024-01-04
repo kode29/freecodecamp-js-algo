@@ -119,3 +119,6 @@ function fightSlime(){
 function fightBeast(){
 
 }
+function sellWeapon(){
+    
+}
