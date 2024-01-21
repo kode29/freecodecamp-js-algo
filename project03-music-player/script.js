@@ -121,7 +121,7 @@ const playNextSong = () => {
   }
 };
 
-const playPreviousSong = () => {
+const playPreviousSong = () =>{
    if (userData?.currentSong === null) return;
    else {
     const currentSongIndex = getCurrentSongIndex();
@@ -177,8 +177,8 @@ const renderSongs = (array) => {
 };
 
 const setPlayButtonAccessibleText = () => {
-  
-}
+  const song =  userData?.currentSong || userData?.songs[0]
+};
 
 const getCurrentSongIndex = () => userData?.songs.indexOf(userData.currentSong);
 
