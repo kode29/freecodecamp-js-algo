@@ -143,6 +143,8 @@ const shuffle = () => {
   setPlayButtonAccessibleText();
 };
 
+
+
 const setPlayerDisplay = () => {
   const playingSong = document.getElementById("player-song-title");
   const songArtist = document.getElementById("player-song-artist");
@@ -213,6 +215,6 @@ nextButton.addEventListener("click", playNextSong);
 
 previousButton.addEventListener("click", playPreviousSong);
 
-
+shuffleButton.addEventListener("click", shuffle);
 
 renderSongs(userData?.songs);
