@@ -122,7 +122,7 @@ const playNextSong = () => {
   }
 };
 
-const playPreviousSong = () =>{
+const playPreviousSong = () => {
    if (userData?.currentSong === null) return;
    else {
     const currentSongIndex = getCurrentSongIndex();
@@ -132,7 +132,9 @@ const playPreviousSong = () =>{
    }
 };
 
+const shuffle = () => {
   
+};
 
 const setPlayerDisplay = () => {
   const playingSong = document.getElementById("player-song-title");
