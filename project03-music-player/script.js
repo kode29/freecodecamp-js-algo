@@ -122,7 +122,7 @@ const playNextSong = () => {
   }
 };
 
-const playPreviousSong = () => {
+const playPreviousSong = () =>{
    if (userData?.currentSong === null) return;
    else {
     const currentSongIndex = getCurrentSongIndex();
@@ -133,6 +133,7 @@ const playPreviousSong = () => {
 };
 
 const shuffle = () => {
+  userData?.songs.sort(() => Math.random() - 0.5);
   
 };
 
