@@ -122,7 +122,7 @@ const playNextSong = () => {
   }
 };
 
-const playPreviousSong = () => {
+const playPreviousSong = () =>{
    if (userData?.currentSong === null) return;
    else {
     const currentSongIndex = getCurrentSongIndex();
@@ -167,7 +167,8 @@ const deleteSong = (id) => {
     playlistSongs.appendChild(resetButton);
 
     resetButton.addEventListener("click", () => {
-  
+      userData.songs = [...allSongs];
+
     });
 
   }
