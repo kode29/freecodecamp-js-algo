@@ -76,6 +76,41 @@ const allSongs = [
     duration: "2:43",
     src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
   },
+  {
+    id: 10,
+    title: "Hello World",
+    artist: "RafaelDavisH",
+    duration: "0:23",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/hello-world.mp3",
+  },
+  {
+    id: 11,
+    title: "In the Zone",
+    artist: "RafaelDavisH",
+    duration: "0:11",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/in-the-zone.mp3",
+  },
+  {
+    id: 12,
+    title: "Camper Cat",
+    artist: "RafaelDavisH",
+    duration: "0:21",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/camper-cat.mp3",
+  },
+  {
+    id: 13,
+    title: "Electronic",
+    artist: "RafaelDavisH",
+    duration: "0:15",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/electronic.mp3",
+  },
+  {
+    id: 14,
+    title: "Sailing Away",
+    artist: "RafaelDavisH",
+    duration: "0:22",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
+  },
 ];
 
 const audio = new Audio();
@@ -250,6 +285,11 @@ previousButton.addEventListener("click", playPreviousSong);
 
 shuffleButton.addEventListener("click", shuffle);
 
+audio.addEventListener("ended", () => {
+  const currentSongIndex = getCurrentSongIndex();
+  const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
+
+});
 
 
 renderSongs(userData?.songs);
