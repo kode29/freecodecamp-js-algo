@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
   body{
     display: flex;
@@ -11,15 +12,69 @@
     background-color: #001;
     color: #fff;
   }
-  #logo {
-    width: 400px;
+  #wrapper {
+    width: 450px;
+  }
+  #logo, #mainBox, #infoBox{
+    width: 100%;
+  }
+  h1{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 3em;
+  }
+
+  #mainBox, #infoBox{
+    padding: 20px;
+    border-radius: 20px;
   }
   #mainBox {
-    width: 400px;
     background-color: #fff;
     text-align: center;
     color: #000;
-    border-radius: 10px;
-    box-shadow: 0 3px 3px purple;
+    box-shadow: 0 3px 3px #f06628;
+  }
+  #mainBox p{
+    margin-bottom: 20px;
+  }
+  #mainBox input, #mainBox button {
+    border-radius: 15px;
+    border: 0;
+  }
+  #mainBox input{
+    border-bottom: #184ce9 solid 2px;
+    width: 230px;
+    text-align: center;
+    /* line-height: 2.5em; */
+    font-size: 1.5em;
+  }
+  #mainBox button{
+    background-color: #184ce9;
+    color: #fff;
+    width: 100px;
     padding: 10px;
+    cursor: pointer;
+  }
+  #infoBox {
+    background: #f06628;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.475em;
+  }
+  #infoBox p{
+    display: inline-block;
+    /* width:  90%; */
+    margin: auto;
+    text-align: left;
+    padding-left: 30px;
+
+  }
+  #infoBox p::before{
+    content: '💡';
+    margin-left: -35px;
+    margin-right:  10px;
+  }
+  #result {
+    font-size: 1.3em;
   }
